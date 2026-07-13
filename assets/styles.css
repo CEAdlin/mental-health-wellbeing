@@ -1,3 +1,14 @@
 body {
-    background-color: #f0f0f0;
+    
+    background-image: url("../assets/images/forest-stream-white.png");
+    background-color:rgb(192, 194, 220);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
