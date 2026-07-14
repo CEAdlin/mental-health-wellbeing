@@ -15,24 +15,29 @@
 /* Global styles */
 body {
     
-    background-image: url("../assets/images/forest-stream-white.png");
+    background-image: url("../images/index-forest-bg.png");
     background-color:rgb(192, 194, 220);
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     background-attachment: fixed;
     min-height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
 }
 /* Navbar */
+.navbar-custom {
+    background-color: rgba(255, 255, 255, 0.427); /*A semi-transparent white*/
+}
 
 /* Header */
 
 /* Buttons */
 
 /* Footer*/
+#footer {
+    background-color: rgba(255, 255, 255, 0.427); /*A semi-transparent white*/
 
+}
 /* Media queries */
 
 /* Small screens and up */
