@@ -7,7 +7,7 @@
   --primary-font: "Cormorant Garamond", cursive;
   --secondary-font: "Quicksand", sans-serif;
   --primary-color: #28293e; /* dark slate grey */
-  --secondary-color: #707389; /* light slate grey */
+  --secondary-color: #5a608e; /* light slate grey */
   --highlight-color: #ffffff; /* white */
   --highlight-color-light: #d6eafd; /* light powder blue */
   --btn-hover-color:
@@ -39,13 +39,7 @@ h5,
 h6 {
   font-family: var(--secondary-font);
   color: var(--primary-color);
-}
-
-p {
-  font-family: var(--secondary-font);
-  color: var(--primary-color);
   font-size: 2rem;
-  font-weight: 600;
 }
 
 /* Navbar */
@@ -54,26 +48,37 @@ p {
   /*A semi-transparent white*/
 }
 
-/* Header */
+/* Hero Section */
 #hero {
-  min-height: 100vh;
   display: flex;
+  height:100vh;
   align-items: center;
   text-align: center;
   color: #ffffff;
   padding: 80px 20px;
 }
-#hero-title {
-    font-size: clamp(2rem, 3vw, 3rem);
-    line-height: 1.2;
+#hero-title, #stuck-title {
+    font-size: clamp(2rem, 2vw, 3rem);
+    line-height: 2.0    ;
+}
+#hero em {
+      font-size: clamp(2rem, 3vw, 3rem);
 }
 
-#hero-subtitle {
-    font-size: clamp(1rem, 2vw, 1.5rem);
+#hero p {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+#hero-subtitle, #stuck-subtitle {
+    font-size: clamp(1rem, 1.4vw, 1.5rem);
+    
 }
 
 #hero .row {
-  min-height: 75vh;
+  min-height: 80vh;
 }
 
 #hero h1 {
@@ -102,6 +107,59 @@ p {
     background-color: rgba(214, 234, 253, 0.3);
     border-color: rgba(214, 234, 253, 0.3);
     color: var(--primary-color);
+}
+
+/* Quote Section */
+#quote-section {
+    background:white;
+    border-top:1px solid rgba(0,0,0,0.05);
+    border-bottom:1px solid rgba(0,0,0,0.05);
+}
+
+
+.quote-container {
+    padding:20px 15vw;
+}
+
+
+.blockquote {
+    max-width:600px;
+    text-align:center;
+}
+
+
+.blockquote p {
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    font-size:clamp(1.5rem, 2vw, 2.3rem);
+    font-style:italic;
+    line-height:1.4;
+    margin-bottom:0;
+}
+
+.blockquote-footer {
+    font-family:var(--secondary-font);
+    font-size:1.2rem;
+    margin:0;
+}
+
+/* Section 2 - Feeling Stuck Cards */
+
+.info-card {
+    background:rgba(255, 255, 255, 0.6);
+    padding:2rem;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    height:100%;
+}
+
+
+.info-card h4 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size:1.4rem;
+    font-family: var(--primary-font);
+
 }
 
 /* Footer*/

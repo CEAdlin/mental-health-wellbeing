@@ -1,136 +1,255 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Mental Health Compass</title>
 
-    <!-- Custom favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/TMHC_logo2.png">
-    <link rel="apple-touch-icon" href="assets/images/TMHC_logo2.png">
+<!-- Custom favicons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/TMHC_logo2.png"
+    />
+    <link rel="apple-touch-icon" href="assets/images/TMHC_logo2.png" />
 
+<!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Custom CSS   -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+<!-- Custom CSS   -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
 
-<body>
-    <!-- Header -->
+  <body>
+
+<!-- Header -->
     <header>
-        <!-- Bootstrap Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-custom">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="index.html"><img src="assets/images/TMHC_logo2.png"
-                        alt="The Mental Health Compass" height="50" class="d-inline-block align-text-top"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+
+<!-- Bootstrap Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="assets/images/TMHC_logo2.png"
+              alt="The Mental Health Compass"
+              height="50"
+              class="d-inline-block align-text-top"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <section id="hero">
+      <section id="hero">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-9 text-center">
+              <h2 class="fw-bold mb-4" id="hero-title">
+                A guide to building a life that feels<br /><em>
+                  Meaningful, Fulfilling and Truly Yours.</em
+                >
+              </h2>
 
-            <div class="container-fluid">
+              <h4 class="mb-6" id="hero-subtitle">
+                Life can sometimes feel overwhelming, exhausting or like you're
+                stuck on the wrong path. The Mental Health Compass provides free
+                resources, ideas and inspiration to help you understand
+                yourself, overcome challenges and create a life that supports
+                your wellbeing.
+              </h4>
 
-                <div class="row align-items-center justify-content-center">
+              <a href="#stories" class="btn btn-custom btn-lg me-3">
+                Get Inspired
+              </a>
 
-                    <div class="col-lg-10 text-center">
-
-                        <h2 class="fw-bold mb-4" id="hero-title">
-                            A guide to building a life that feels meaningful, fulfilling and truly yours.
-                        </h2>
-
-                        <h4 class="mb-6" id="hero-subtitle">
-                            Life can sometimes feel overwhelming, exhausting or like you're stuck on the wrong path.
-                            The Mental Health Compass provides free resources, ideas and inspiration to help you
-                            understand yourself, overcome challenges and create a life that supports your wellbeing.
-                        </h4>
-
-                        <a href="#stories" class="btn btn-custom btn-lg me-3">
-                            Get Inspired
-                        </a>
-
-                        <a href="#resources" class="btn btn-custom btn-lg">
-                            Explore Resources
-                        </a>
-
-                    </div>
-
-                </div>
-
+              <a href="#resources" class="btn btn-custom btn-lg">
+                Explore Resources
+              </a>
             </div>
+          </div>
+        </div>
+      </section>
 
-        </section>
-
-        <section id="categories">
-            <h1>Areas</h1>
-            <p>various areas of mental health</p>
-        </section>
-    </main>
-    <!-- Footer Section -->
-    <footer id="footer" class="mt-auto">
-        <!-- mt-auto added to push footer to the bottom of the page -->
-        <div class="container py-4">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2026 The Mental Health Compass</p>
-                </div>
+<!-- Quote Break -->
+<section id="quote-section">
+    <div class="container-fluid">
+        <div class="quote-container row align-items-center">
+            <div class="col-lg-9">
+                <blockquote class="blockquote">
+                    <p>
+                        "The secret to change is to focus all your energy not on fighting the old,
+                        but on creating the new."
+                    </p>
+                </blockquote>
+            </div>
+            <div class="col-lg-3 text-center">
+                <figcaption class="blockquote-footer">
+    Often attributed to <cite title="Socrates">Socrates</cite>
+</figcaption>
             </div>
         </div>
+    </div>
+</section>          
+<!-- Section 2 - Feeling Stuck Section -->
+      <section id="stuck" class="py-5">
+        <div class="container">
+          <div class="text-center mb-5">
+            <h2 id="stuck-title">
+              Feeling Stuck...When life feels like something you have to escape
+              from
+            </h2>
+
+            <h4 class="mb-6" id="stuck-subtitle">
+              Many people reach a point where they feel trapped — stuck in a job
+              they dislike, disconnected from themselves, overwhelmed by
+              responsibilities or unsure how they ended up where they are.
+              <br />
+              Feeling this way can be a sign that something needs attention, not
+              that you have failed.
+            </h4>
+          </div>
+
+<!-- Section2 - Feeling Stuck Cards -->
+          <div class="row g-4 feeling-stuck">
+            <!-- Card 1 -->
+            <div class="col-md-6 col-lg-3">
+              <div class="info-card h-100 stuck-card">
+                <h4>I feel lost</h4>
+
+                <ul>
+                  <li>Finding direction</li>
+                  <li>Understanding your values</li>
+                  <li>Identifying what matters</li>
+                  <li>Creating goals</li>
+                </ul>
+              </div>
+            </div>
+
+<!-- Card 2 -->
+            <div class="col-md-6 col-lg-3 stuck-card">
+              <div class="info-card h-100">
+                <h4>I feel overwhelmed</h4>
+
+                <ul>
+                  <li>Finding balance</li>
+                  <li>Reducing stress</li>
+                  <li>Creating healthy habits</li>
+                  <li>Building resilience</li>
+                </ul>
+              </div>
+            </div>
+
+<!-- Card 3 -->
+            <div class="col-md-6 col-lg-3 stuck-card">
+              <div class="info-card h-100">
+                <h4>I feel trapped</h4>
+
+                <ul>
+                  <li>Creating change</li>
+                  <li>Challenging limiting beliefs</li>
+                  <li>Exploring possibilities</li>
+                  <li>Taking small steps forward</li>
+                </ul>
+              </div>
+            </div>
+
+<!-- Card 4 -->
+            <div class="col-md-6 col-lg-3 stuck-card">
+              <div class="info-card h-100">
+                <h4>I feel disconnected</h4>
+
+                <ul>
+                  <li>Finding yourself again</li>
+                  <li>Self-awareness</li>
+                  <li>Confidence</li>
+                  <li>Authentic living</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+<!-- Footer Section -->
+    <footer id="footer" class="mt-auto"><!-- mt-auto added to push footer to the bottom of the page -->
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0">&copy; 2026 The Mental Health Compass</p>
+          </div>
+        </div>
+      </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+<!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- Font Awesome kit -->
-    <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
+<!-- Font Awesome kit -->
+    <script
+      src="https://kit.fontawesome.com/aa9af45995.js"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+<!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
     <script>
-        document
-            .querySelectorAll(".navbar-collapse .nav-link")
-            .forEach((link) => {
-                link.addEventListener("click", function (e) {
-                    let section = document.querySelector(e.target.getAttribute("href"));
-                    if (section) {
-                        e.preventDefault(); // Prevent default anchor click behavior
-                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
-                        window.scroll({
-                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
-                            behavior: "smooth",
-                        });
-                        document
-                            .querySelector(".navbar-collapse")
-                            .classList.remove("show"); // Collapse navbar
-                    }
-                });
-            });
+      document
+        .querySelectorAll(".navbar-collapse .nav-link")
+        .forEach((link) => {
+          link.addEventListener("click", function (e) {
+            let section = document.querySelector(e.target.getAttribute("href"));
+            if (section) {
+              e.preventDefault(); // Prevent default anchor click behavior
+              let navbarHeight =
+                document.querySelector(".navbar-toggler").offsetHeight;
+              window.scroll({
+                top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                behavior: "smooth",
+              });
+              document
+                .querySelector(".navbar-collapse")
+                .classList.remove("show"); // Collapse navbar
+            }
+          });
+        });
     </script>
-
-</body>
-
+  </body>
 </html>
