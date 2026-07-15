@@ -53,6 +53,29 @@ h6 {
   /*A semi-transparent white*/
 }
 
+.navbar-brand,
+.brand-container {
+  display: flex;
+  align-items: center;
+}
+
+.brand-container {
+  display: flex;
+
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.brand-name {
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: 2rem;
+  font-weight: 700;
+  margin-left: 0.8rem;
+  line-height: 1; /* crucial for vertical centring */
+}
+
 /* Hero Section */
 #hero {
   display: flex;
@@ -105,10 +128,10 @@ h6 {
 /* Hero Section Buttons */
 .btn-custom {
   background-color: transparent;
-  color: var(--highlight-color);
+  color: var(--primary-color);
   font-family: var(--secondary-font);
   font-weight: 600;
-  border: 2px solid var(--highlight-color);
+  border: 2px solid var(--primary-color);
   border-radius: 50px;
   padding: 12px 30px;
   margin: 20px;
@@ -316,7 +339,7 @@ h6 {
   font-family: var(--primary-font);
   color: var(--highlight-color);
 
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 5vw, 2.4rem);
 
   font-weight: 700;
 
@@ -398,6 +421,11 @@ h6 {
   font-weight: 400;
 }
 
+.btn-close {
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+}
+
 /* Helpful Links & resource Section */
 
 #resources {
@@ -409,7 +437,7 @@ h6 {
 
   color: var(--primary-color);
 
-  font-size: clamp(2rem, 5vw, 3rem);
+  font-size: clamp(2rem, 5vw, 2.4rem);
 
   font-weight: 700;
 }
@@ -496,14 +524,173 @@ h6 {
   margin: auto;
 }
 
+/* Join Our Community Contact Form */
+
+/* ==========================
+   Community Section
+=========================== */
+
+#community {
+  width: 100%;
+}
+
+/* Form Container */
+
+.community-form-wrapper {
+  width: 60%;
+
+  background: rgba(40, 41, 62, 0.8);
+
+  padding: 3rem;
+
+  border-radius: 25px;
+
+  color: white;
+}
+
+/* Heading */
+
+.community-form-wrapper h2 {
+  font-family: var(--primary-font);
+
+  color: white;
+
+  font-size: clamp(2rem, 5vw, 2.4rem);
+
+  font-weight: 700;
+}
+
+.community-form-wrapper p {
+  font-size: 1.1rem;
+
+  line-height: 1.7;
+}
+
+/* Form Labels */
+
+.community-form-wrapper .form-label {
+  font-weight: 600;
+}
+
+/* Inputs */
+
+.community-form-wrapper .form-control {
+  padding: 0.9rem 1rem;
+
+  border-radius: 10px;
+
+  border: none;
+}
+
+.community-form-wrapper .form-control:focus {
+  box-shadow: 0 0 0 0.25rem rgba(90, 96, 142, 0.5);
+}
+
+.privacy-note {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 1.5rem;
+}
+
+.modal-content {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  border: none;
+}
+
+/* Button */
+
+.btn-community {
+  background: #5a608e;
+
+  color: white;
+
+  border-radius: 30px;
+
+  padding: 0.8rem 2.2rem;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.btn-community:hover {
+  background: white;
+
+  color: #28293e;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .community-form-wrapper {
+    width: 80%;
+  }
+}
+
+@media (max-width: 576px) {
+  .community-form-wrapper {
+    width: 95%;
+
+    padding: 2rem;
+  }
+}
+
 /* Footer*/
 #footer {
-  background-color: rgba(255, 255, 255, 0.427);
-  /*A semi-transparent white*/
+  background-color: white;
   display: flex;
   min-height: 100px;
   align-items: center;
   justify-content: center;
+  padding: 40px 0px 0px 0px;
+}
+
+#footer h3 {
+  font-family: (var(--primary-font));
+
+  color: (var(--primary-color));
+
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+#footer p {
+  line-height: 1.7;
+
+  opacity: 0.9;
+  text-align: center;
+}
+
+.footer-links {
+  list-style: none;
+
+  padding: 0;
+  text-align: center;
+}
+
+.footer-links li {
+  margin-bottom: 0.7rem;
+}
+
+.footer-links a {
+  color: (var(--primary-color));
+
+  text-decoration: none;
+
+  opacity: 0.9;
+
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #5a608e;
+}
+
+#footer hr {
+  margin: 2rem 0;
+
+  opacity: 0.3;
 }
 
 /* Media queries */
