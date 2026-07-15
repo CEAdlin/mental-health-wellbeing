@@ -6,11 +6,11 @@
 :root {
   --primary-font: "Cormorant Garamond", cursive;
   --secondary-font: "Quicksand", sans-serif;
-  --primary-color: #28293e; /* dark slate grey */
+  --primary-color: #2e304e; /* dark slate grey */
   --secondary-color: #5a608e; /* light slate grey */
   --highlight-color: #ffffff; /* white */
   --highlight-color-light: #d6eafd; /* light powder blue */
-  --btn-hover-color:  
+  --btn-hover-color:   
 ;
 }
 
@@ -58,11 +58,11 @@ h6 {
   color: #ffffff;
   padding: 80px 20px;
 }
-#hero-title,
-#stuck-title {
+#hero-title {
   font-size: clamp(2rem, 2vw, 3rem);
   line-height: 2;
 }
+
 #hero em {
   font-size: clamp(2rem, 3vw, 3rem);
 }
@@ -75,8 +75,13 @@ h6 {
 }
 
 #hero-subtitle,
-#stuck-subtitle {
+#challenges-subtitle {
   font-size: clamp(1rem, 1.4vw, 1.5rem);
+  font-family: var(--secondary-font);
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 20px 0px 20px 0px;
 }
 
 #hero .row {
@@ -101,7 +106,7 @@ h6 {
   border: 2px solid var(--highlight-color);
   border-radius: 50px;
   padding: 12px 30px;
-  margin: 10px;
+  margin: 20px;
   transition: all 0.3s ease;
 }
 
@@ -116,6 +121,7 @@ h6 {
   background: white;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  margin:0px 0px 100px 0px;
 }
 
 .quote-container {
@@ -129,8 +135,9 @@ h6 {
 
 .blockquote p {
   font-family: var(--primary-font);
-  color: var(--secondary-color);
-  font-size: clamp(1.5rem, 2vw, 2.3rem);
+  color: var(--primary-color);
+  font-size: clamp(1.5rem, 2.1vw, 2.3rem);
+  font-weight: 600;
   font-style: italic;
   line-height: 1.4;
   margin-bottom: 0;
@@ -142,21 +149,159 @@ h6 {
   margin: 0;
 }
 
-/* Section 2 - Feeling Stuck Cards */
+/* Section 2 - Challenges Cards */
 
-.info-card {
-  background: rgba(255, 255, 255, 0.6);
-  padding: 2rem;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  height: 100%;
+
+#challenges {
+  background: #ffffff;
+  margin:60px 0px;
 }
 
-.info-card h4 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 1.4rem;
+.challenges-container {
+  padding: 0px;
+
+}
+
+#challenges-title {
   font-family: var(--primary-font);
+  color: var(--primary-color);
+  font-size: clamp(2rem, 3vw, 3rem);
+  font-weight: 700;
+  text-align:center;
+}
+
+.flip-card {
+  height: 300px;
+  perspective: 1000px;
+  cursor: pointer;
+  padding:0px 20px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-size: cover;
+  background-position: center;
+}
+
+.card-overlay {
+  height: 100%;
+  padding: 3rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  color: white;
+
+  background: rgba(40, 41, 62, 0.7);
+}
+
+.card-overlay h3 {
+  font-weight: 700;
+  font-family: var(--primary-font);
+  color: var(--highlight-color);
+  text-align:center;
+  top: 0;
+}
+
+.card-overlay p {
+  font-family: var(--secondary-font);
+  color: var(--highlight-color);
+  font-size: 1rem;
+  font-weight: 400;
+  text-align:center;
+}
+
+.card-overlay span {
+  margin-top: 1rem;
+  color: white;
+  font-weight: 600;
+  text-align:center;
+}
+
+.flip-card-back {
+  background: #28293e;
+  color: white;
+  padding: 2rem;
+  transform: rotateY(180deg);
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.flip-card-back h3 {
+  color: (var(--highlight-color));
+  font-family: var(--primary-font);
+  text-align:center;
+
+}
+
+.flip-card-back p {
+   color: white;
+   text-align:center;
+}
+
+.flip-card-back ul {
+  padding-left: 1.0rem;
+  top: 0;
+}
+
+.flip-card-back li {
+  margin-bottom: 0.1rem;
+}
+
+.flip-card-back small {
+    text-align:center;
+    margin-top:0.5rem;
+}
+
+/* Background Images */
+
+.overwhelmed {
+  background-image: url("../images/Challenges_1.jpg");
+}
+
+.anxiety {
+  background-image: url("../images/Challenges_2.jpg");
+}
+
+.depression {
+  background-image: url("../images/Challenges_3.jpg");
+}
+
+.burnout {
+  background-image: url("../images/Challenges_4.png");
+}
+
+.loneliness {
+  background-image: url("../images/Challenges_5.png");
+}
+
+.changes {
+  background-image: url("../images/Challenges_6.jpg");
 }
 
 /* Footer*/
@@ -169,31 +314,24 @@ h6 {
   justify-content: center;
 }
 
-/* Section 3 */
+/* Section 3 - Stories Carousel */
 
 #stories {
   width: 100%;
 }
+#stories-title {
+  font-family: var(--primary-font);
+  color: var(--highlight-color);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  text-align:center;
+  padding: 10px;
+}
 
 .carousel-item {
-  height: 30vh;
-  min-height: 450px;
-}
-
-.carousel-item img {
-  height: 100%;
-  width: 100%;
-  object-position: top;
-  object-fit: cover;
-}
-
-.carousel-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.45);
+  height: 40vh;
+  background: rgba(40, 41, 62, 0.8);
+  position: relative;
 }
 
 .carousel-caption {
@@ -238,17 +376,14 @@ h6 {
   font-weight: 400;
 }
 
-@media (max-width: 768px) {
-  .carousel-item {
-    height: 60vh;
-  }
 
-  .carousel-caption p {
-    font-size: 1.4rem;
-  }
-}
 /* Media queries */
 
+@media (max-width: 768px) {
+  .carousel-item {
+    height: 40vh;
+  }
+}
 /* Small screens and up */
 @media screen and (min-width: 576px) {
   /* increase font size in events table when screen size is large enough */

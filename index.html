@@ -1,471 +1,527 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Mental Health Compass</title>
 
-    <!-- Custom favicons -->
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/TMHC_logo2.png"
-    />
-    <link rel="apple-touch-icon" href="assets/images/TMHC_logo2.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Mental Health Compass</title>
 
-    <!-- Bootstrap 5 CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+  <!-- Custom favicons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/TMHC_logo2.png" />
+  <link rel="apple-touch-icon" href="assets/images/TMHC_logo2.png" />
 
-    <!-- Custom CSS   -->
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
-  <body>
-    <!-- Header -->
-    <header>
-      <!-- Bootstrap Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-custom">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"
-            ><img
-              src="assets/images/TMHC_logo2.png"
-              alt="The Mental Health Compass"
-              height="50"
-              class="d-inline-block align-text-top"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-          </div>
+  <!-- Custom CSS   -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/TMHC_logo2.png"
+            alt="The Mental Health Compass" height="50" class="d-inline-block align-text-top" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <main>
-      <section id="hero">
-        <div class="container-fluid">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-lg-9 text-center">
-              <h2 class="fw-bold mb-4" id="hero-title">
-                A guide to building a life that feels<br /><em>
-                  Meaningful, Fulfilling and Truly Yours.</em
-                >
-              </h2>
-
-              <h4 class="mb-6" id="hero-subtitle">
-                Life can sometimes feel overwhelming, exhausting or like you're
-                stuck on the wrong path. The Mental Health Compass provides free
-                resources, ideas and inspiration to help you understand
-                yourself, overcome challenges and create a life that supports
-                your wellbeing.
-              </h4>
-
-              <a href="#stories" class="btn btn-custom btn-lg me-3">
-                Get Inspired
-              </a>
-
-              <a href="#resources" class="btn btn-custom btn-lg">
-                Explore Resources
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Quote Break -->
-      <section id="quote-section">
-        <div class="container-fluid">
-          <div class="quote-container row align-items-center">
-            <div class="col-lg-9">
-              <blockquote class="blockquote">
-                <p>
-                  "The secret to change is to focus all your energy not on
-                  fighting the old, but on creating the new."
-                </p>
-              </blockquote>
-            </div>
-            <div class="col-lg-3 text-center">
-              <figcaption class="blockquote-footer">
-                Often attributed to <cite title="Socrates">Socrates</cite>
-              </figcaption>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- Section 2 - Feeling Stuck Section -->
-      <section id="stuck" class="py-5">
-        <div class="container">
-          <div class="text-center mb-5">
-            <h2 id="stuck-title">
-              Feeling Stuck...When life feels like something you have to escape
-              from
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="hero">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-10 text-center">
+            <h2 class="fw-bold mb-2" id="hero-title">
+              Find your direction.&nbsp; Discover your strength.&nbsp; Create
+              your next chapter.
             </h2>
 
-            <h4 class="mb-6" id="stuck-subtitle">
-              Many people reach a point where they feel trapped — stuck in a job
-              they dislike, disconnected from themselves, overwhelmed by
-              responsibilities or unsure how they ended up where they are.
-              <br />
-              Feeling this way can be a sign that something needs attention, not
-              that you have failed.
+            <h4 class="mb-8" id="hero-subtitle">
+              You don't have to navigate life's difficult seasons alone. The
+              Mental Health Compass connects you with real stories, supportive
+              people and practical guidance to help you find direction and
+              move forward.
             </h4>
-          </div>
 
-          <!-- Section2 - Feeling Stuck Cards -->
-          <div class="row g-4 feeling-stuck">
-            <!-- Card 1 -->
-            <div class="col-md-6 col-lg-3">
-              <div class="info-card h-100 stuck-card">
-                <h4>I feel lost</h4>
+            <a href="#stories" class="btn btn-custom me-3"> Get Inspired </a>
 
-                <ul>
-                  <li>Finding direction</li>
-                  <li>Understanding your values</li>
-                  <li>Identifying what matters</li>
-                  <li>Creating goals</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="col-md-6 col-lg-3 stuck-card">
-              <div class="info-card h-100">
-                <h4>I feel overwhelmed</h4>
-
-                <ul>
-                  <li>Finding balance</li>
-                  <li>Reducing stress</li>
-                  <li>Creating healthy habits</li>
-                  <li>Building resilience</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="col-md-6 col-lg-3 stuck-card">
-              <div class="info-card h-100">
-                <h4>I feel trapped</h4>
-
-                <ul>
-                  <li>Creating change</li>
-                  <li>Challenging limiting beliefs</li>
-                  <li>Exploring possibilities</li>
-                  <li>Taking small steps forward</li>
-                </ul>
-              </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="col-md-6 col-lg-3 stuck-card">
-              <div class="info-card h-100">
-                <h4>I feel disconnected</h4>
-
-                <ul>
-                  <li>Finding yourself again</li>
-                  <li>Self-awareness</li>
-                  <li>Confidence</li>
-                  <li>Authentic living</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 3 -->
-      <!-- ==========================
-     SECTION 3 - STORIES
-=========================== -->
-
-      <section id="stories">
-        <div
-          id="storyCarousel"
-          class="carousel slide carousel-fade"
-          data-bs-ride="carousel"
-        >
-          <!-- Indicators -->
-
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#storyCarousel"
-              data-bs-slide-to="0"
-              class="active"
-            ></button>
-
-            <button
-              type="button"
-              data-bs-target="#storyCarousel"
-              data-bs-slide-to="1"
-            ></button>
-
-            <button
-              type="button"
-              data-bs-target="#storyCarousel"
-              data-bs-slide-to="2"
-            ></button>
-          </div>
-
-          <!-- Slides -->
-
-          <div class="carousel-inner">
-            <!-- Story 1 -->
-
-            <div class="carousel-item active">
-              <img
-                src="assets/images/section3-carousel-story-1-bg.png"
-                class="d-block w-100"
-                alt="Person looking reflective"
-              />
-
-              <div class="carousel-overlay"></div>
-
-              <div class="carousel-caption">
-                <p>
-                  "I had everything I thought I wanted, but inside I felt
-                  completely lost. Learning to ask for help helped me find my
-                  way back to myself."
-                </p>
-                <h5>
-                  Sarah's Story — Finding Myself Again After Postnatal
-                  Depression
-                </h5>
-                <button
-                  type="button"
-                  class="btn btn-custom"
-                  data-bs-toggle="modal"
-                  data-bs-target="#sarahModal"
-                >
-                  Read Sarah's Journey
-                </button>
-              </div>
-            </div>
-
-            <!-- Story 2 -->
-
-            <div class="carousel-item">
-              <img
-                src="assets/images/story2.jpg"
-                class="d-block w-100"
-                alt="Person walking outdoors"
-              />
-
-              <div class="carousel-overlay"></div>
-
-              <div class="carousel-caption">
-                <p>
-                  "I realised I didn't need to completely change my life. I just
-                  needed to start making small choices that aligned with who I
-                  wanted to become."
-                </p>
-
-                <h5>James' Story</h5>
-              </div>
-            </div>
-
-            <!-- Story 3 -->
-
-            <div class="carousel-item">
-              <img
-                src="assets/images/story3.jpg"
-                class="d-block w-100"
-                alt="Person enjoying nature"
-              />
-
-              <div class="carousel-overlay"></div>
-
-              <div class="carousel-caption">
-                <p>
-                  "Learning to understand myself gave me the confidence to
-                  create a life that felt authentic and meaningful."
-                </p>
-
-                <h5>Emma's Story</h5>
-              </div>
-            </div>
-          </div>
-
-          <!-- Controls -->
-
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#storyCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon"></span>
-          </button>
-
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#storyCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon"></span>
-          </button>
-        </div>
-      </section>
-    </main>
-
-    <!-- Footer Section -->
-    <footer id="footer" class="mt-auto">
-      <!-- mt-auto added to push footer to the bottom of the page -->
-      <div class="container py-4">
-        <div class="row">
-          <div class="col-12 text-center">
-            <p class="mb-0">&copy; 2026 The Mental Health Compass</p>
+            <a href="#resources" class="btn btn-custom">
+              Explore Resources
+            </a>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
 
-    <!-- Sarah Story Modal -->
+    <!-- Quote Break -->
+    <section id="quote-section">
+      <div class="container-fluid">
+        <div class="quote-container row align-items-center">
+          <div class="col-lg-9">
+            <blockquote class="blockquote">
+              <p>
+                "The secret to change is to focus all your energy not on
+                fighting the old, but on creating the new."
+              </p>
+            </blockquote>
+          </div>
+          <div class="col-lg-3 text-center">
+            <figcaption class="blockquote-footer">
+              Often attributed to <cite title="Socrates">Socrates</cite>
+            </figcaption>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <div
-      class="modal fade"
-      id="sarahModal"
-      tabindex="-1"
-      aria-labelledby="sarahModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-lg modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h2 class="modal-title" id="sarahModalLabel">
-              Sarah's Story — Finding Myself Again
-            </h2>
+    <!-- Section 2 - What Are You Struggling With? -->
 
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
+    <section id="challenges" class="py-5">
+      <div class="container">
+        <div class="text-center mb-2">
+          <h2 class="fw-bold" id="challenges-title">
+            What feels most familiar today?
+          </h2>
+
+          <p class="lead" id="challenges-subtitle">
+            Many of us experience similar challenges at different points in
+            life. Explore the topics below to discover stories, guidance and
+            support.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- CARD 1 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front overwhelmed">
+                  <div class="card-overlay">
+                    <h3>Feeling Overwhelmed</h3>
+
+                    <p>
+                      When everything feels like too much and you're unsure
+                      where to begin.
+                    </p>
+
+                    <span> Discover more → </span>
+                  </div>
+                </div>
+
+                <div class="flip-card-back">
+                  <h3>What to look out for</h3>
+
+                  <ul>
+                    <li>Feeling constantly behind</li>
+                    <li>Difficulty concentrating</li>
+                    <li>Emotional exhaustion</li>
+                    <li>Irritability</li>
+                    <li>Struggling to switch off</li>
+                  </ul>
+
+                  <small> Click to return </small>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="modal-body">
-            <p>
-              When my daughter was born, I felt like I should have been happier
-              than I had ever been. I had everything I had always dreamed of — a
-              beautiful baby, a loving partner and the life I thought I had been
-              working towards.
-            </p>
+          <!-- CARD 2 -->
 
-            <p>
-              But instead of feeling the overwhelming joy I expected, I felt
-              empty, anxious and completely disconnected. I loved my baby
-              deeply, but I struggled with feelings I couldn't explain. I felt
-              exhausted, overwhelmed and like I was somehow failing at the one
-              thing I was supposed to be naturally good at.
-            </p>
+          <div class="col-lg-4 col-md-6">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front anxiety">
+                  <div class="card-overlay">
+                    <h3>Anxiety & Worry</h3>
 
-            <p>
-              The hardest part was the shame. I was terrified that if I admitted
-              how I felt, people would think I was ungrateful or a bad mum. So I
-              kept smiling, telling everyone I was fine, while quietly feeling
-              like I was falling apart.
-            </p>
+                    <p>
+                      When your thoughts feel overwhelming and your mind won't
+                      slow down.
+                    </p>
 
-            <p>
-              Eventually, I realised I couldn't keep pretending. Opening up was
-              one of the hardest things I have ever done, but telling my partner
-              and allowing myself to accept support was the first step towards
-              healing.
-            </p>
+                    <span> Discover more → </span>
+                  </div>
+                </div>
 
-            <p>
-              I learned that what I was experiencing was not a reflection of how
-              much I loved my child, or the kind of person I was. Asking for
-              help was not a weakness — it was an act of courage.
-            </p>
+                <div class="flip-card-back">
+                  <h3>What to look out for</h3>
 
-            <p>
-              Today, I understand that even in the moments when we feel most
-              lost, there is still a way forward. I no longer see that time as a
-              failure. It was a chapter that taught me the importance of
-              connection, honesty and showing myself the same kindness I give to
-              others.
-            </p>
+                  <ul>
+                    <li>Racing thoughts</li>
+                    <li>Overthinking situations</li>
+                    <li>Feeling constantly alert</li>
+                    <li>Tension or restlessness</li>
+                    <li>Difficulty relaxing</li>
+                  </ul>
+
+                  <small> Click to return </small>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-custom"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
+          <!-- CARD 3 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front depression">
+                  <div class="card-overlay">
+                    <h3>Low Mood & Depression</h3>
+
+                    <p>
+                      When life feels heavier and things that once brought joy
+                      feel distant.
+                    </p>
+
+                    <span> Discover more → </span>
+                  </div>
+                </div>
+
+                <div class="flip-card-back">
+                  <h3>What to look out for</h3>
+
+                  <ul>
+                    <li>Persistent sadness</li>
+                    <li>Low motivation</li>
+                    <li>Loss of interest</li>
+                    <li>Feeling disconnected</li>
+                    <li>Changes in sleep</li>
+                  </ul>
+
+                  <small> Click to return </small>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- CARD 4 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front burnout">
+                  <div class="card-overlay">
+                    <h3>Stress & Burnout</h3>
+
+                    <p>
+                      When carrying too much for too long leaves you feeling
+                      exhausted.
+                    </p>
+
+                    <span> Discover more → </span>
+                  </div>
+                </div>
+
+                <div class="flip-card-back">
+                  <h3>What to look out for</h3>
+
+                  <ul>
+                    <li>Constant tiredness</li>
+                    <li>Feeling emotionally drained</li>
+                    <li>Reduced motivation</li>
+                    <li>Feeling detached</li>
+                    <li>Small tasks feel overwhelming</li>
+                  </ul>
+
+                  <small> Click to return </small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 5 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front loneliness">
+                  <div class="card-overlay">
+                    <h3>Loneliness & Isolation</h3>
+
+                    <p>
+                      When you feel disconnected or like nobody truly
+                      understands.
+                    </p>
+
+                    <span> Discover more → </span>
+                  </div>
+                </div>
+
+                <div class="flip-card-back">
+                  <h3>What to look out for</h3>
+
+                  <ul>
+                    <li>Feeling alone</li>
+                    <li>Withdrawing from others</li>
+                    <li>Lack of support</li>
+                    <li>Feeling misunderstood</li>
+                    <li>Difficulty reaching out</li>
+                  </ul>
+
+                  <small> Click to return </small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 6 -->
+
+          <div class="col-lg-4 col-md-6">
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front changes">
+                  <div class="card-overlay">
+                    <h3>Life Changes & New Beginnings</h3>
+
+                    <p>
+                      Navigating uncertainty during major transitions in life.
+                    </p>
+
+                    <span> Discover more → </span>
+                  </div>
+                </div>
+
+                <div class="flip-card-back">
+                  <h3>What to look out for</h3>
+
+                  <ul>
+                    <li>Feeling unsettled</li>
+                    <li>Loss of confidence</li>
+                    <li>Difficulty adjusting</li>
+                    <li>Fear of the future</li>
+                    <li>Feeling stuck</li>
+                  </ul>
+
+                  <small> Click to return </small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3 -->
+
+    <section id="stories">
+      <div id="storyCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <!-- Indicators -->
+
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="0" class="active"></button>
+
+          <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="1"></button>
+
+          <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Slides -->
+                    <h1 class="text-center mb-5" id="stories-title">Real Stories, Real Journeys</h1>
+        <div class="carousel-inner col-lg-8">
+          <!-- Story 1 -->
+          <div class="carousel-item active">
+            <div class="carousel-caption">
+              <p>
+                "I had everything I thought I wanted, but inside I felt
+                completely lost. Learning to ask for help helped me find my
+                way back to myself."
+              </p>
+
+              <h5>
+                Sarah's Story — Finding Myself Again After Postnatal
+                Depression
+              </h5>
+
+              <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#sarahModal">
+                Read Sarah's Journey
+              </button>
+            </div>
+          </div>
+
+          <!-- Story 2 -->
+
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <p>
+                "I realised I didn't need to completely change my life. I just
+                needed to start making small choices that aligned with who I
+                wanted to become."
+              </p>
+
+              <h5>James' Story</h5>
+            </div>
+          </div>
+
+          <!-- Story 3 -->
+
+          <div class="carousel-item">
+            <div class="carousel-caption">
+              <p>
+                "Learning to understand myself gave me the confidence to
+                create a life that felt authentic and meaningful."
+              </p>
+
+              <h5>Emma's Story</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Controls -->
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#storyCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#storyCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer id="footer" class="mt-auto">
+    <!-- mt-auto added to push footer to the bottom of the page -->
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p class="mb-0">&copy; 2026 The Mental Health Compass</p>
         </div>
       </div>
     </div>
+  </footer>
 
-    <!-- Bootstrap JS -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Sarah Story Modal -->
 
-    <!-- Font Awesome kit -->
-    <script
-      src="https://kit.fontawesome.com/aa9af45995.js"
-      crossorigin="anonymous"
-    ></script>
+  <div class="modal fade" id="sarahModal" tabindex="-1" aria-labelledby="sarahModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title" id="sarahModalLabel">
+            Sarah's Story — Finding Myself Again
+          </h2>
 
-    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
-    <script>
-      document
-        .querySelectorAll(".navbar-collapse .nav-link")
-        .forEach((link) => {
-          link.addEventListener("click", function (e) {
-            let section = document.querySelector(e.target.getAttribute("href"));
-            if (section) {
-              e.preventDefault(); // Prevent default anchor click behavior
-              let navbarHeight =
-                document.querySelector(".navbar-toggler").offsetHeight;
-              window.scroll({
-                top: section.offsetTop - navbarHeight, // Adjust for navbar height
-                behavior: "smooth",
-              });
-              document
-                .querySelector(".navbar-collapse")
-                .classList.remove("show"); // Collapse navbar
-            }
-          });
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <p>
+            When my daughter was born, I felt like I should have been happier
+            than I had ever been. I had everything I had always dreamed of — a
+            beautiful baby, a loving partner and the life I thought I had been
+            working towards.
+          </p>
+
+          <p>
+            But instead of feeling the overwhelming joy I expected, I felt
+            empty, anxious and completely disconnected. I loved my baby
+            deeply, but I struggled with feelings I couldn't explain. I felt
+            exhausted, overwhelmed and like I was somehow failing at the one
+            thing I was supposed to be naturally good at.
+          </p>
+
+          <p>
+            The hardest part was the shame. I was terrified that if I admitted
+            how I felt, people would think I was ungrateful or a bad mum. So I
+            kept smiling, telling everyone I was fine, while quietly feeling
+            like I was falling apart.
+          </p>
+
+          <p>
+            Eventually, I realised I couldn't keep pretending. Opening up was
+            one of the hardest things I have ever done, but telling my partner
+            and allowing myself to accept support was the first step towards
+            healing.
+          </p>
+
+          <p>
+            I learned that what I was experiencing was not a reflection of how
+            much I loved my child, or the kind of person I was. Asking for
+            help was not a weakness — it was an act of courage.
+          </p>
+
+          <p>
+            Today, I understand that even in the moments when we feel most
+            lost, there is still a way forward. I no longer see that time as a
+            failure. It was a chapter that taught me the importance of
+            connection, honesty and showing myself the same kindness I give to
+            others.
+          </p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-custom" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+  </script>
+
+  <!-- Font Awesome kit -->
+  <script src="https://kit.fontawesome.com/aa9af45995.js" crossorigin="anonymous"></script>
+
+  <!-- JavaScript code for flipping challenge cards -->
+  <script>
+    document.querySelectorAll(".flip-card").forEach((card) => {
+      card.addEventListener("click", () => {
+        card.classList.toggle("flipped");
+      });
+    });
+  </script>
+
+  <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+  <script>
+    document
+      .querySelectorAll(".navbar-collapse .nav-link")
+      .forEach((link) => {
+        link.addEventListener("click", function (e) {
+          let section = document.querySelector(e.target.getAttribute("href"));
+          if (section) {
+            e.preventDefault(); // Prevent default anchor click behavior
+            let navbarHeight =
+              document.querySelector(".navbar-toggler").offsetHeight;
+            window.scroll({
+              top: section.offsetTop - navbarHeight, // Adjust for navbar height
+              behavior: "smooth",
+            });
+            document
+              .querySelector(".navbar-collapse")
+              .classList.remove("show"); // Collapse navbar
+          }
         });
-    </script>
-  </body>
+      });
+  </script>
+</body>
+
 </html>
