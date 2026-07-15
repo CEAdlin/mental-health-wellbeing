@@ -328,81 +328,188 @@
 
     <!-- Section 3 -->
 
-    <section id="stories">
-      <div id="storyCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <!-- Indicators -->
+<!-- ==========================
+     Stories Section
+=========================== -->
 
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="0" class="active"></button>
+<section id="stories" class="py-5">
 
-          <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="1"></button>
+    <div class="container">
 
-          <button type="button" data-bs-target="#storyCarousel" data-bs-slide-to="2"></button>
+        <h2 class="text-center mb-4" id="stories-title">
+            Real Stories, Real Journeys
+        </h2>
+
+        <div id="storyCarousel"
+             class="carousel slide carousel-fade"
+             data-bs-ride="carousel">
+
+            <!-- Indicators -->
+
+            <div class="carousel-indicators">
+
+                <button type="button"
+                        data-bs-target="#storyCarousel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Slide 1"></button>
+
+                <button type="button"
+                        data-bs-target="#storyCarousel"
+                        data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+
+                <button type="button"
+                        data-bs-target="#storyCarousel"
+                        data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+
+            </div>
+
+
+            <!-- Slides -->
+
+            <div class="carousel-inner">
+
+                <!-- Story 1 -->
+
+                <div class="carousel-item active">
+
+                    <div class="story-slide">
+
+                        <div class="row justify-content-center">
+
+                            <div class="col-lg-8 col-xl-7 text-center">
+                                <h5>
+                                    Sarah's Story — Finding Myself Again After
+                                    Postnatal Depression
+                                </h5>
+                                <p>
+                                    "I had everything I thought I wanted, but inside I
+                                    felt completely lost. Learning to ask for help
+                                    helped me find my way back to myself."
+                                </p>
+                                <button
+                                    type="button"
+                                    class="btn btn-custom mt-4"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#sarahModal">
+
+                                    Read Sarah's Journey
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Story 2 -->
+
+                <div class="carousel-item">
+
+                    <div class="story-slide">
+
+                        <div class="row justify-content-center">
+
+                            <div class="col-lg-8 col-xl-7 text-center">
+                                <h5>
+                                    James' Story
+                                </h5>
+                                <p>
+                                    "I realised I didn't need to completely change my
+                                    life. I just needed to start making small choices
+                                    that aligned with who I wanted to become."
+                                </p>
+                                                                <button
+                                    type="button"
+                                    class="btn btn-custom mt-4"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#jamesModal">
+
+                                    Read James' Journey
+
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Story 3 -->
+
+                <div class="carousel-item">
+
+                    <div class="story-slide">
+
+                        <div class="row justify-content-center">
+
+                            <div class="col-lg-8 col-xl-7 text-center">
+                                <h5>
+                                    Emma's Story
+                                </h5>
+                                <p>
+                                    "Learning to understand myself gave me the
+                                    confidence to create a life that felt authentic
+                                    and meaningful."
+                                </p>
+                                <button
+                                    type="button"
+                                    class="btn btn-custom mt-4"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#emmaModal">
+
+                                    Read Emma's Journey
+
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Controls -->
+
+            <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#storyCarousel"
+                data-bs-slide="prev">
+
+                <span class="carousel-control-prev-icon"></span>
+
+            </button>
+
+            <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#storyCarousel"
+                data-bs-slide="next">
+
+                <span class="carousel-control-next-icon"></span>
+
+            </button>
+
         </div>
 
-        <!-- Slides -->
-                    <h1 class="text-center mb-5" id="stories-title">Real Stories, Real Journeys</h1>
-        <div class="carousel-inner col-lg-8">
-          <!-- Story 1 -->
-          <div class="carousel-item active">
-            <div class="carousel-caption">
-              <p>
-                "I had everything I thought I wanted, but inside I felt
-                completely lost. Learning to ask for help helped me find my
-                way back to myself."
-              </p>
+    </div>
 
-              <h5>
-                Sarah's Story — Finding Myself Again After Postnatal
-                Depression
-              </h5>
+</section>
 
-              <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#sarahModal">
-                Read Sarah's Journey
-              </button>
-            </div>
-          </div>
-
-          <!-- Story 2 -->
-
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <p>
-                "I realised I didn't need to completely change my life. I just
-                needed to start making small choices that aligned with who I
-                wanted to become."
-              </p>
-
-              <h5>James' Story</h5>
-            </div>
-          </div>
-
-          <!-- Story 3 -->
-
-          <div class="carousel-item">
-            <div class="carousel-caption">
-              <p>
-                "Learning to understand myself gave me the confidence to
-                create a life that felt authentic and meaningful."
-              </p>
-
-              <h5>Emma's Story</h5>
-            </div>
-          </div>
-        </div>
-
-        <!-- Controls -->
-
-        <button class="carousel-control-prev" type="button" data-bs-target="#storyCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </button>
-
-        <button class="carousel-control-next" type="button" data-bs-target="#storyCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </button>
-      </div>
-    </section>
-  </main>
+</main>  </main>
 
   <!-- Footer Section -->
   <footer id="footer" class="mt-auto">
