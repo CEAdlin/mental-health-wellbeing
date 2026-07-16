@@ -437,8 +437,9 @@ h6 {
 .btn-modal:hover {
 
     background: var(--highlight-color);
+    border: 2px solid var(--secondary-color);
+    color:var(--secondary-color);
 
-    color:white;
 
 }
 
@@ -459,6 +460,7 @@ h6 {
 .btn-close {
   font-family: var(--secondary-font);
   color: var(--primary-color);
+  active: var(--secondary-color);
 }
 
 /* Helpful Links & resource Section */
