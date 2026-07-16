@@ -551,10 +551,6 @@ h6 {
 
 /* Join Our Community Contact Form */
 
-/* ==========================
-   Community Section
-=========================== */
-
 #community {
   width: 100%;
 }
@@ -645,22 +641,6 @@ h6 {
   color: #28293e;
 }
 
-/* Responsive */
-
-@media (max-width: 992px) {
-  .community-form-wrapper {
-    width: 80%;
-  }
-}
-
-@media (max-width: 576px) {
-  .community-form-wrapper {
-    width: 95%;
-
-    padding: 2rem;
-  }
-}
-
 /* Footer*/
 #footer {
   background-color: white;
@@ -718,7 +698,17 @@ h6 {
   opacity: 0.3;
 }
 
-/* Media queries */
+/* Responsive Media queries */
+
+@media (max-width: 576px) {
+  .brand-name {
+    display: none;
+  }
+
+  .brand-title {
+    font-size: 1.5rem;
+  }
+}
 
 @media (max-width: 768px) {
   .carousel-item {
@@ -726,51 +716,19 @@ h6 {
   }
 }
 
-/* Small screens and up */
-@media screen and (min-width: 576px) {
 
-  /* increase font size in events table when screen size is large enough */
-  #events .table {
-    font-size: 1rem;
-  }
-
-  .student-discount {
-    font-size: 1rem;
+@media (max-width: 992px) {
+  .community-form-wrapper {
+    width: 80%;
   }
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media screen and (min-width: 768px) {
+@media (max-width: 576px) {
+  .community-form-wrapper {
+    width: 95%;
 
-  /* Make all service cards the same height for consistency */
-  #services .card-body {
-    min-height: 191px;
+    padding: 2rem;
   }
 }
 
-/* Large devices (small laptops, 992px and up) */
-@media screen and (min-width: 992px) {
 
-  /* Make all service cards the same height for consistency */
-  #services .card-body {
-    min-height: auto;
-  }
-}
-
-/* xl devices (large desktops, 1200px and up) */
-@media screen and (min-width: 1200px) {
-
-  /* make all service cards the same height for consistency */
-  #services .card-body {
-    min-height: 220px;
-  }
-}
-
-/* xxl devices (larger desktops, 1400px and up) */
-@media screen and (min-width: 1400px) {
-
-  /* make all service cards the same height for consistency */
-  #services .card-body {
-    min-height: 195px;
-  }
-}
