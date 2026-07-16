@@ -289,7 +289,7 @@ h6 {
 }
 
 .flip-card-back h3 {
-  color: (var(--highlight-color));
+  color: var(--highlight-color);
   font-family: var(--primary-font);
   text-align: center;
 }
@@ -662,9 +662,9 @@ h6 {
 }
 
 #footer h3 {
-  font-family: (var(--primary-font));
+  font-family: var(--primary-font);
 
-  color: (var(--primary-color));
+  color: var(--primary-color);
 
   margin-bottom: 1.2rem;
   text-align: center;
@@ -689,7 +689,7 @@ h6 {
 }
 
 .footer-links a {
-  color: (var(--primary-color));
+  color: var(--primary-color);
 
   text-decoration: none;
 
