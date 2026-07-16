@@ -49,8 +49,7 @@ h6 {
 
 /* Navbar */
 .navbar-custom {
-  background-color: rgba(255, 255, 255, 0.427);
-  /*A semi-transparent white*/
+  background-color: rgba(255, 255, 255, 0.8); /*A semi-transparent white*/
 }
 
 .navbar-brand,
@@ -59,12 +58,18 @@ h6 {
   align-items: center;
 }
 
+.nav-item {
+  font-family: var(--secondary-font);
+  font-weight: 600;
+}
 .brand-container {
   display: flex;
-
   align-items: center;
-
   text-decoration: none;
+}
+
+.navbar-toggler {
+  background-color: transparent;
 }
 
 .brand-name {
@@ -76,7 +81,9 @@ h6 {
   line-height: 1; /* crucial for vertical centring */
 }
 
+
 /* Hero Section */
+
 #hero {
   display: flex;
   height: 100vh;
@@ -126,6 +133,7 @@ h6 {
 }
 
 /* Hero Section Buttons */
+
 .btn-custom {
   background-color: transparent;
   color: var(--highlight-color);
@@ -145,6 +153,8 @@ h6 {
 }
 
 /* Quote Section */
+
+
 #quote-section {
   background: white;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
